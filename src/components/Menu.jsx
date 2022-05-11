@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 const Menu = () => {
 
     const menuLinks = [
+        {name: "home", href: "/"},
         {name: "about", href: "/about"},
-        {name: "resume", href: "/resume"},
+        {name: "experience", href: "/resume"},
+        {name: "meta", href: "/meta"},
         {name: "contact", href: "/contact"}
     ];
 

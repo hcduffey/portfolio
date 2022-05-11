@@ -2,11 +2,11 @@ import Project from "./Project";
 
 const ProjectList = () => {
     const projects = [
-        {name: "Tic Tac Toe", img: "logo512.png", url: "#"},
-        {name: "Memory", img: "logo512.png", url: "#"},
-        {name: "Candyland", img: "logo512.png", url: "#"},
-        {name: "MTG: Collect", img: "logo512.png", url: "#"},
-        {name: "Sixty-Three", img: "logo512.png", url: "#"},
+        {name: "Tic Tac Toe", img: "tic-tac-toe.png", url: "https://hcduffey.github.io/tic-tac-toe-project/"},
+        {name: "Memory", img: "memory.png", url: "https://hcduffey.github.io/memory-match-game/"},
+        {name: "Candyland", img: "candyland.png", url: "https://hcduffey.github.io/candyland/"},
+        {name: "MTG: Collect", img: "mtgcollect.png", url: "https://github.com/hcduffey/MTG-Collector"},
+        {name: "Sixty-Three", img: "sixty-three.png", url: "https://github.com/hcduffey/SixtyThree"},
     ];
 
     return(

@@ -3,7 +3,7 @@ const Project = (props) => {
         <div className="project-container">
 
             <div className="project-image-container">
-                <img className="project-image" src={props.img} alt={props.name} />
+                <a href={props.url}><img className="project-image" src={props.img} alt={props.name} /></a>
             </div>
 
             <div className="project-name-container">

@@ -1,5 +1,12 @@
+import JobList from "../components/JobList";
+
 const Resume = () => {
-    return(<h1>Resume</h1>)
+    return(
+        <div className="page-container">
+            <h1>Experience <a href="/resume.pdf"><img src="file_icon.svg" alt="file" /></a></h1>            
+            <JobList />
+        </div>
+    )
 }
 
 export default Resume;
