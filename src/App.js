@@ -1,9 +1,10 @@
-import '../styles/App.css';
+import './styles/App.css';
+import { Outlet } from 'react-router';
 
 function App() {
   return (
     <div className="App">
-      <h1>In App</h1>
+      <Outlet />
     </div>
   );
 }
