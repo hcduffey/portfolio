@@ -4,7 +4,7 @@ const Nav = (props) => {
     return (
         <div className="nav-bar">
             <div className="brand">
-                <span className="name">{props.name} </span> 
+                <span className="name">{props.name} &gt; </span> 
                 <span className="motto">{props.motto}</span>
             </div>
             <Menu />

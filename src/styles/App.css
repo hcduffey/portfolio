@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
 body {
     background-color: #023047;
     color: #219ebc;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -10,12 +13,25 @@ a {
 
 a:hover {
     color: #ffb703;
+    text-decoration: underline;
 }
 
 .nav-bar {
+    padding: 0 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.name {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.motto {
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-large;
 }
 
 .menu-list {
@@ -24,4 +40,54 @@ a:hover {
 
 .menu-list li {
     display: inline-block;
+}
+
+/* ABOUT PAGE */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container {
+    width: 50%;
+    margin: 2em 13em;
+    display: flex;
+}
+
+.intro-text {
+    padding: 1em;
+}
+
+.headshot-container {
+    float: left;
+}
+
+.headshot-container img {
+    max-width: 10em;
+    border-radius: 2px;
+    opacity: 0.5;
+}
+
+.headshot-container img:hover {
+    opacity: 1.0;
+}
+
+.project-list-container {
+    display: flex;
+
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image {
+    max-width: 10em;
+    border-radius: 50;
 }
