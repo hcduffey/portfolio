@@ -1,10 +1,12 @@
+import Intro from "../components/Intro";
+import ProjectList from "../components/ProjectList";
+
 const Main = () => {
     return(
-        <div className="title-container">
-            <div className="page-container">
-                <span className="title">Available for Work</span>
-                <span className="subtitle">June 13</span>
-            </div>
+        <div className="page-container">
+            <Intro />
+            <h1>Projects</h1>
+            <ProjectList />
         </div>
     )
 }

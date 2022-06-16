@@ -5,7 +5,7 @@ const ContactForm = (props) => {
             <input name="subject" type="text" />
             <label htmlFor="message">Message</label>
             <textarea name="body"></textarea>
-            <input className="mail-button" type="submit" value="Reach Out" />
+            <input className="mail-button" type="submit" value="Send" />
         </form>
     );
 } 
