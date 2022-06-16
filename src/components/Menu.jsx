@@ -4,9 +4,7 @@ const Menu = () => {
 
     const menuLinks = [
         {name: "home", href: "/"},
-        {name: "about", href: "/about"},
         {name: "experience", href: "/resume"},
-        {name: "meta", href: "/meta"},
         {name: "contact", href: "/contact"}
     ];
 
