@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@200&family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
 
 body {
     background:#F5FBEF;
@@ -8,39 +9,6 @@ body {
 
 a {
     color: #9D69A3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.title-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-hr {
-    color: #9D69A3;
-}
-
-.title {
-    font-family: 'Big Shoulders Text', cursive;
-    font-weight: 200;
-    font-size: 10em;
-    animation-name: slide;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-}
-
-.subtitle {
-    font-size: 4em;
-    animation-name: slideLeft;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
 }
 
 .nav-bar {
@@ -88,7 +56,7 @@ hr {
 }
 
 .intro-text {
-    padding: 1em;
+    padding-left: 1em;
 }
 
 .headshot-container {
@@ -115,29 +83,27 @@ hr {
     margin: 0.3em;
 }
 
-.project-left-container {
-    text-align: center;
-}
-
 .project-link-container {
     text-align: center;
 }
 
-.project-right-container {
-    width:250px;
-    margin-left: 1em;
-}
-
 .project-image {
-    max-width: 10em;
-    border-radius: 50%;
-    opacity: .5;
+    position:relative;
+    max-width: 30em;
+    z-index: 100;
 }
 
-.project-image:hover {
-    opacity: 1;
+.project-description-container {
+    text-align: center;
+    position:absolute;
+    width: 30em;
+    z-index: 1;
 }
 
+.hide {
+    transform: scaleY(0);
+    transition: transform 400ms ease 0ms;
+}
 
 .job {
     width: min-content;
@@ -171,7 +137,7 @@ input {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #9D69A3;
+    border: 2px solid ;
     border-radius: 4px;
 }
 
@@ -185,25 +151,8 @@ textarea {
     border-radius: 4px;
 }
 
-.mail-button {
-    padding: 0.5em 1em 0.5em 1em;
-    font-size: 3em;
-    background-color: #F5FBEF;
-    color:#9D69A3;
-    border: #9D69A3 2px solid;
-    border-radius: 3px;
-}
-
-.mail-button:hover {
-    background-color:#9D69A3;
-    color:#F5FBEF;
-    border: #F5FBEF 2px solid;
-}
-
 .icon-list-container {
     display: flex;
-    gap: 2em;
-    margin-top: 1.5em;
 }
 
 .icon-container {
@@ -212,8 +161,8 @@ textarea {
 }
 
 .icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .repo-img {
@@ -221,40 +170,3 @@ textarea {
     width: 25px;
 }
 
-/* ANIMATIONS */
-
-@-webkit-keyframes slide {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-    }
-  }
-  
-@keyframes slide {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-    }
-  }
-
-  @-webkit-keyframes slideLeft {
-    0% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-    }
-  }
-  
-@keyframes slideLeft {
-    0% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-    }
-  }

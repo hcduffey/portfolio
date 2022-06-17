@@ -4,7 +4,7 @@ const IconList = () => {
     const iconArray = [
         {name:"Github", url:"https://github.com/hcduffey", img:"github.png" },
         {name:"LinkedIn", url:"https://linkedin.com/in/cduffey", img:"linkedin.png"},
-        {name:"Twitter", url:"https://twitter.com/cliffduffey2", img:"twitter.png"}
+        {name:"Twitter", url:"mailto:cliff.duffey@pm.me", img:"mail.png"}
     ];
 
     return(

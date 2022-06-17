@@ -1,25 +1,34 @@
-const Project = (props) => {
-    return(
-        <div className="project-container">
-            <div className="project-left-container">
-                <div className="project-image-container">
-                    <a href={props.url}><img className="project-image" src={props.img} alt={props.name} /></a>
-                </div>
+import { useRef } from "react";
 
-                <div className="project-name-container">
-                    <div className="project-left-container">
-                        {props.name}
-                        <div className="project-link-container">
-                            <a href={props.repo}><img class="repo-img" src="repo.png" alt="repo" /></a>
-                            <a href={props.url}><img class="repo-img" src="live.png" alt="live" /></a>
-                        </div>
-                    </div>
+const Project = (props) => {
+    const projectImage = useRef();
+    const projectDescription = useRef();
+
+    const handleMouseEnter = () => {
+        projectImage.current.classList.add("hide");
+        projectDescription.current.classList.remove("hide");
+    }
+
+    const handleMouseLeave = () => {
+        projectImage.current.classList.remove("hide");
+        projectDescription.current.classList.add("hide");
+    }
+
+    return(
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="project-container">
+
+            <div ref={projectImage} className="project-image-container">
+                <a href={props.url}><img className="project-image" src={props.img} alt={props.name} /></a>
+            </div>
+            <div ref={projectDescription} className="project-description-container hide">
+                <h1 className="title">{props.name}</h1>
+                <div className="project-link-container">
+                    <a href={props.repo}><img class="repo-img" src="repo.png" alt="repo" /></a>
+                    <a href={props.url}><img class="repo-img" src="live.png" alt="live" /></a>
                 </div>
+                <p>{props.description}</p>
             </div>
-            
-            <div className="project-right-container">
-                    {props.description}
-            </div>
+                
         </div>
     );
 }
