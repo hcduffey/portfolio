@@ -24,9 +24,9 @@ const Main = () => {
             <div className="tabs is-large">
                 <ul>
                     {/* eslint-disable-next-line */}
-                    <li className={showProjects && "is-active"}><a onClick={handlePortfolioClick}>Portfolio</a></li>
+                    <li className={showProjects ? "is-active" : ""}><a onClick={handlePortfolioClick}>Portfolio</a></li>
                     {/* eslint-disable-next-line */}
-                    <li className={!showProjects && "is-active"}><a onClick={handleJobClick}>Experience</a></li>
+                    <li className={!showProjects ? "is-active" : ""}><a onClick={handleJobClick}>Experience</a></li>
                 </ul>
             </div>
 

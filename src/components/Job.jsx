@@ -1,13 +1,14 @@
 const Job = (props) => {
     return(
         <div className={props.class}>
-            <img className="job-image" src={props.img} alt="company" />
-            <h3>{props.job}</h3>
-            <span className="job-description">
+            <div className="job-image-container">
+                <img className="job-image" src={props.img} alt="company" />
+            </div>
+            <div className="job-description-container">
+                <h3>{props.job}</h3>
                 {props.description}
-            </span>
+            </div>
         </div>
-        
     )
 }
 

@@ -1,4 +1,5 @@
 import Job from "./Job";
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 const JobList = () => {
 
@@ -30,18 +31,20 @@ const JobList = () => {
     ]
 
     return(
-        <div className="job-list-container">
-        {
-            jobArray.map((job, idx) => {
-                return(
-                    idx === jobArray.length-1 ?
-                    <Job key={idx} class="last-job" img={job.img} name={job.name} job={job.job} description={job.description} />
-                    :
-                    <Job key={idx} class="job" img={job.img} name={job.name} job={job.job} description={job.description} />
-                )
-            })
-        }
-        </div>
+        <>
+            <h1 className="title">Professional Highlights</h1>
+
+            <h1 className="subtitle">Download my <a href="/duffey-resume.pdf" download={true}>Resume <AttachFileIcon /></a></h1>
+            <div className="job-list-container">
+            {
+                jobArray.map((job, idx) => {
+                    return(
+                        <Job key={idx} class="job" img={job.img} name={job.name} job={job.job} description={job.description} />
+                    )
+                })
+            }
+            </div>
+        </>
     );
 }
 
