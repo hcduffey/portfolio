@@ -18,13 +18,13 @@ const Project = (props) => {
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="project-container">
 
             <div ref={projectImage} className="project-image-container">
-                <a href={props.url}><img className="project-image" src={props.img} alt={props.name} /></a>
+                <img className="project-image" src={props.img} alt={props.name} />
             </div>
             <div ref={projectDescription} className="project-description-container hide">
                 <h1 className="title">{props.name}</h1>
                 <div className="project-link-container">
-                    <a href={props.repo}><img className="repo-img" src="repo.png" alt="repo" /></a> 
-                    <a href={props.url}><img className="repo-img" src="live.png" alt="live" /></a>
+                    <a rel="noreferrer" target="_blank" href={props.repo}><img className="repo-img" src="repo.png" alt="repo" /></a> 
+                    <a rel="noreferrer" target="_blank" href={props.url}><img className="repo-img" src="live.png" alt="live" /></a>
                 </div>
                 <p>{props.description}</p>
             </div>
