@@ -23,7 +23,7 @@ const Project = (props) => {
             <div ref={projectDescription} className="project-description-container hide">
                 <h1 className="title">{props.name}</h1>
                 <div className="project-link-container">
-                    <a href={props.repo}><img className="repo-img" src="repo.png" alt="repo" /></a>
+                    <a href={props.repo}><img className="repo-img" src="repo.png" alt="repo" /></a> 
                     <a href={props.url}><img className="repo-img" src="live.png" alt="live" /></a>
                 </div>
                 <p>{props.description}</p>

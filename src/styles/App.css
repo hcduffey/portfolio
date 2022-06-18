@@ -3,8 +3,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
 
 body {
-    background:#F9F8FF;
-    color: #8D8DB9;
+    /* background:#FFFFFF;
+    color: #000000; */
+    background-color: #ffffff;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #f4f5ff 0, #f4f5ff 1px, #ffffff 0, #ffffff 50%);
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -47,18 +50,26 @@ body {
 
 /* ABOUT PAGE */
 
+.card-content-container {
+    display: flex;
+}
+
 .intro-container {
-    width: 50%;
+    width: 50%; 
     margin: 2em 13em;
     display: flex;
 }
 
 .intro-text {
-    padding-left: 1em;
+    margin-left: 1em;
+}
+
+.card {
+    display: flex;
 }
 
 .headshot-container {
-    float: left;
+    width: min-content;
 }
 
 .headshot-container img {
@@ -103,8 +114,11 @@ body {
     transition: transform 400ms ease 0ms;
 }
 
+.job-list-container {
+    margin: 0 5em 0 10em;
+}
+
 .job {
-    margin: 3em 6em;
     display: flex;
 }
 
@@ -163,12 +177,12 @@ textarea {
     width: 25px;
 }
 
-@media only screen and (max-width: 600px) {
-    .intro-container {
-        width: 50%;
-        margin: 2em 13em;
-        display: flex;
+@media only screen and (max-width: 750px) {
+    
+    .card-content-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .headshot-container {
         text-align: center;

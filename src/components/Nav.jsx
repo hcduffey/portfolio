@@ -7,7 +7,7 @@ const Nav = () => {
     const [isActive, setisActive] = useState(false);
 
     return (
-        <nav className="navbar is-link is-fixed-top">
+        <nav className="navbar is-transparent is-fixed-top">
             <div className="navbar-brand">
                 <a className="navbar-item" href="https://bulma.io">
                     <span className="name">Cliff Duffey</span>
