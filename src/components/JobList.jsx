@@ -1,5 +1,4 @@
 import Job from "./Job";
-import { DownloadForOffline } from "@mui/icons-material";
 import { useRef, useState } from "react";
 
 const JobList = () => {
@@ -69,7 +68,7 @@ const JobList = () => {
     return(
         <>
             <h1 className="title">Professional Highlights</h1>
-            <h1 className="subtitle"><a href="/duffey-resume.pdf" download={true}><DownloadForOffline />Resume</a></h1>
+            <h1 className="subtitle"><a className="button" href="/duffey-resume.pdf" download={true}>Download Resume</a></h1>
             
             <div className="job-list-container columns">
                 <aside className="menu column is-2">

@@ -177,7 +177,7 @@ textarea {
     width: 25px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 900px) {
     
     .card-content-container {
         flex-direction: column;
@@ -186,5 +186,13 @@ textarea {
     }
     .headshot-container {
         text-align: center;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .job-list-container {
+        display: none;
     }
 }
