@@ -182,7 +182,10 @@ textarea {
 }
 
 @media only screen and (max-width: 900px) {
-    
+    .intro-container {
+        width: 90%;
+    }
+
     .card-content-container {
         flex-direction: column;
         justify-content: center;
@@ -197,7 +200,10 @@ textarea {
     }
 
     .mobile-job-list {
+        width: 90%;
         display: flex;
         flex-direction: column;
     }
+
+
 }

@@ -68,7 +68,7 @@ const JobList = () => {
     return(
         <>
             <h1 className="title">Professional Highlights</h1>
-            <h1 className="subtitle"><a className="button" href="/duffey-resume.pdf" download={true}>Download Resume</a></h1>
+            <h1 className="subtitle"><a className="button is-primary" href="/duffey-resume.pdf" download={true}>Download Resume</a></h1>
             
             <div className="job-list-container columns">
                 <aside className="menu column is-2">
