@@ -130,6 +130,10 @@ body {
     width: 200px;
 }
 
+.mobile-job-list {
+    display: none;
+}
+
 .contact-container {
     height: 100vh;
     display: flex;
@@ -188,11 +192,12 @@ textarea {
         text-align: center;
     }
 
-    .title {
+    .job-list-container {
         display: none;
     }
 
-    .job-list-container {
-        display: none;
+    .mobile-job-list {
+        display: flex;
+        flex-direction: column;
     }
 }

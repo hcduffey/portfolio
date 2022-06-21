@@ -97,6 +97,13 @@ const JobList = () => {
                     { <Job class="job" name={job.name} job={job.job} description={job.description} /> }
                 </div>
             </div>
+            <div className="mobile-job-list">
+                { 
+                    jobArray.map((job, idx) => {
+                        return <Job key={idx} class="job" name={job.name} job={job.job} description={job.description} />
+                    })  
+                }
+            </div>
         </>
     );
 }
