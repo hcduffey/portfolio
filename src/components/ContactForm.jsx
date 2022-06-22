@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {  
-    const SITE_KEY = "6LeNaXYgAAAAAGkpBuXg241nNmporHJZbq2ilNVn";
     const _reCaptchaRef = useRef();
     const [captchaValue, updateCaptchaValue] = useState(null);
     const [submitSuccess, updateSubmitSuccess] = useState(null);
@@ -25,7 +24,7 @@ const ContactForm = () => {
 
         if(name.length !== 0 && email.length !== 0 && message.length !== 0 ) {
             try {
-                let response = await fetch("https://portfolio-contact-me.herokuapp.com/contact/", 
+                let response = await fetch(process.env.REACT_APP_API_URL, 
                     {
                         method: "post",
                         body: JSON.stringify({name: name, email: email, message: message, captcha: captcha})
@@ -101,7 +100,7 @@ const ContactForm = () => {
                 style={{ display: "block" }}
                 theme="light"
                 ref={_reCaptchaRef}
-                sitekey={SITE_KEY}
+                sitekey={process.env.REACT_APP_SITE_KEY}
                 onChange={handleChange}
             />
             {
