@@ -5,20 +5,16 @@ import { Routes, Route } from 'react-router';
 import './styles/index.css';
 import App from './App';
 import Main from './pages/Main';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume';
 import Nav from './components/Nav';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Nav name="Cliff Duffey" motto="Building [Security-In] Software" />
+      <Nav name="Cliff Duffey" />
       <Routes>
           <Route path="/" element={<App />}>
           <Route index element={<Main />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>

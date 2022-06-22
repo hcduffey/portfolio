@@ -48,8 +48,6 @@ body {
     align-items: center;
 }
 
-/* ABOUT PAGE */
-
 .card-content-container {
     display: flex;
 }
@@ -109,6 +107,11 @@ body {
     z-index: 1;
 }
 
+.repo-img {
+    width: 30px;
+    height: 30px;
+}
+
 .hide {
     transform: scaleY(0);
     transition: transform 400ms ease 0ms;
@@ -134,13 +137,13 @@ body {
     display: none;
 }
 
-.contact-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 3em;
+#contact {
+    margin-top: 2.4em;
+}
+
+.contact-form {
+    width: 90%;
+    margin-bottom: 1em;
 }
 
 input {
@@ -148,7 +151,7 @@ input {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid ;
+    border: 2px solid #9D69A3;
     border-radius: 4px;
 }
 
@@ -160,25 +163,6 @@ textarea {
     box-sizing: border-box;
     border: 2px solid #9D69A3;
     border-radius: 4px;
-}
-
-.icon-list-container {
-    display: flex;
-}
-
-.icon-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.icon {
-    height: 40px;
-    width: 40px;
-}
-
-.repo-img {
-    height: 25px;
-    width: 25px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -205,5 +189,9 @@ textarea {
         flex-direction: column;
     }
 
-
+    .repo-img {
+        width: 50px;
+        height: 50px;
+        margin: 0 20px;
+    }
 }

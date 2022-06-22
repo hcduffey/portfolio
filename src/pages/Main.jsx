@@ -2,6 +2,7 @@ import { useState } from "react";
 import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
 import JobList from "../components/JobList";
+import ContactForm from "../components/ContactForm"
 
 const Main = () => {
     const [showProjects, updateShowProjects] = useState(true);
@@ -32,6 +33,7 @@ const Main = () => {
 
             {showProjects ? <ProjectList /> : <JobList />}
 
+            <ContactForm />
         </div>
     )
 }

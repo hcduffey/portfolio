@@ -40,7 +40,7 @@ const Nav = () => {
                     <a onClick={() => { setisActive(!isActive); }} className="navbar-item" rel="noreferrer" target="_blank" href="https://github.com/hcduffey">
                         <GitHubIcon alt="GitHub" />
                     </a>
-                    <a onClick={() => { setisActive(!isActive); }} className="navbar-item" rel="noreferrer" target="_blank" href="mailto:cliff.duffey@pm.me">
+                    <a onClick={() => { setisActive(!isActive); }} className="navbar-item" href="#contact">
                         <EmailIcon alt="E-mail" />
                     </a>
                 </div>
