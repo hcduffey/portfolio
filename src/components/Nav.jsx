@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <nav className="navbar is-transparent is-fixed-top">
             <div className="navbar-brand">
-                <a className="navbar-item" href="https://bulma.io">
+                <a className="navbar-item" href="https://cliffduffey.dev">
                     <span className="name">Cliff Duffey</span>
                 </a>
                 {/* We need the <a> tag to href to nowhere - which creates a warning, the line below disables that warning */}
