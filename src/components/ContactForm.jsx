@@ -96,7 +96,7 @@ const ContactForm = () => {
         }
         <form onSubmit={handleSubmit} className="contact-form">
             <input className="input is-medium" name="name" type="text" placeholder="Your name" required />
-            <input className="input is-medium" name="email" type="email" placeholder="You e-mail address" required />
+            <input className="input is-medium" name="email" type="email" placeholder="Your e-mail address" required />
             <textarea className="textarea is-medium" name="body" placeholder="Your message for me..."></textarea>
             <ReCAPTCHA
                 style={{ display: "block" }}
