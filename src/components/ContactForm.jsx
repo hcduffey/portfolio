@@ -35,9 +35,10 @@ const ContactForm = () => {
                     updateSubmitSuccess(true);
                     updateSubmitFail(false);
                     updateSubmitEnabled(false);
-                    e.target[0].value = ""
-                    e.target[1].value = ""
-                    e.target[2].value = ""
+                    e.target[0].value = "";
+                    e.target[1].value = "";
+                    e.target[2].value = "";
+                    _reCaptchaRef.current.reset();
                 }
                 else {
                     updateSubmitFail(true);
