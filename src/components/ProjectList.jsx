@@ -14,7 +14,7 @@ const ProjectList = () => {
           img: "mtgcollect.png", 
           url: "https://celadon-donut-2d0bd2.netlify.app/", 
           repo:"https://github.com/hcduffey/mtg-react-client",
-          description: "A SPA that provides users with the ability to create, import, export and manage Magic: The Gathering decks. Utilizes the MTG API to retrieve Magic cards. Built using MongoDB, Express, ReactJS, and Node.js."
+          description: "MTG: Deckbuilder is a single-page application that interacts with an RESTful API to perform CRUD operations on 'Deck' resources. A 'Deck' resource represents a Magic: the Gathering deck that is comprised of 60 or more Magic: the Gathering cards. Users can create a deck and add Magic cards to it using the MTG API. There is also an import/export feature that allows users to import from or export to sites like mtggoldfish.com or the online Magic: Arena game."
         },
         {
           name: "Sixty-Three", 

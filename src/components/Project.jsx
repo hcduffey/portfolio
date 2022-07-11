@@ -22,9 +22,9 @@ const Project = (props) => {
             </div>
             <div ref={projectDescription} className="project-description-container hide">
                 <h1 className="title">{props.name}</h1>
-                <div className="project-link-container">
-                    <a rel="noreferrer" target="_blank" href={props.repo}><img className="repo-img" src="repo.png" alt="repo" /></a> 
-                    <a rel="noreferrer" target="_blank" href={props.url}><img className="repo-img" src="live.png" alt="live" /></a>
+                <div className="project-link-container">    
+                    <a className="button is-link is-outlined project-button" rel="noreferrer" target="_blank" href={props.repo}>Code</a> 
+                    <a className="button is-primary is-outlined project-button" rel="noreferrer" target="_blank" href={props.url}>Demo</a>
                 </div>
                 <p>{props.description}</p>
             </div>

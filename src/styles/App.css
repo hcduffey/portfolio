@@ -107,6 +107,10 @@ body {
     z-index: 1;
 }
 
+.project-button {
+    margin: 0.2em 0.5em;
+}
+
 .repo-img {
     width: 30px;
     height: 30px;
