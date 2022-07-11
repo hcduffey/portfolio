@@ -5,7 +5,7 @@ const Intro = () => {
             <div className="card-content">
                 <div className="card-content-container">
                     <div className="headshot-container">
-                        <img src="head_shot.jpg" alt="headshot" />
+                        <img src="head_shot.png" alt="headshot" />
                     </div>
                     <div className="intro-text">
                         <p>Hi! I'm a cybersecurity engineer turned web developer, motivated by the desire to start building software instead of breaking it. I'm driven to apply my security-focused mindset towards protecting user data and ensuring privacy in developing software that users love.</p>     
